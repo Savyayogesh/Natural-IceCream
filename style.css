@@ -1,0 +1,737 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Mainheader {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.leftDiv {
+    display: flex;
+    align-items: center;
+}
+
+.leftDiv img {
+    height: 60px;
+    width: auto;
+}
+
+.rightDiv {
+    background-color: rgb(226, 223, 223);
+    width: 25%;
+    display: flex;
+}
+
+.rightDiv input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.GreenBTN {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: medium;
+    margin-left: 30px;
+}
+
+.GreenBTN a:link,
+.GreenBTN a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.searchBtn {
+    margin-left: 80px;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 15px;
+}
+
+.NavItem {
+    font-size: larger;
+    margin-right: 30px;
+    color: white;
+}
+
+.NavLink:link {
+    color: white;
+    text-decoration: none;
+}
+
+.NavLink:hover {
+    color: green !important;
+}
+
+.NavLink:active {}
+
+.NavLink:visited {
+    color: white;
+}
+
+.bgColor {
+    background-color: rgb(223, 222, 222);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    background: linear-gradient(#061b25 50%, #0a5364 50%);
+}
+
+.textDiv {
+    flex: 1;
+}
+
+.textDiv h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    color: white;
+}
+
+.textDiv span {
+    color: rgb(245, 160, 174);
+}
+
+.imgDiv {
+    width: 50%;
+    height: 400px;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 400px;
+}
+
+.heading {
+    text-align: center;
+    font-size: xx-large;
+    margin: 50px auto;
+}
+
+.videoDiv {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.videoDiv h1 {
+    padding-bottom: 40px;
+    font-size: 38px;
+}
+
+.OriginalProduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0 50px 0;
+}
+
+.ProductDiv {
+    width: 48%;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.ProductImg {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ProductDiv:hover .ProductImg {
+    transform: scale(1.09);
+}
+
+.Varieties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 10%;
+}
+
+.card {
+    width: 20%;
+    height: 400px;
+    background-color: white;
+}
+
+.CardImg {
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    transform: translate(-50%, -50%);
+    color: green;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card:hover .eye-icon {
+    opacity: 1;
+}
+
+
+.card p {
+    text-align: center;
+    margin: 30px 0;
+    font-size: larger;
+}
+
+.btns {
+    display: none;
+}
+
+.card:hover .btns {
+    display: block;
+}
+
+.GrayBTN {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: medium;
+    margin-left: 30px;
+}
+
+.GreenText {
+    color: green;
+}
+
+.IceCreamanchor:link {
+    color: black;
+    text-decoration: none;
+}
+
+.IceCreamanchor:visited {
+    color: black;
+}
+
+.IcecreamImg {
+    width: 100%;
+}
+
+.CardImg:hover .IcecreamImg {
+    transform: scale(1.05);
+}
+
+.store {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.storeImg {
+    width: 100%;
+    height: 450px;
+}
+
+.IngredientStory {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+}
+
+.ingredientInfo {
+    flex: 1;
+}
+
+.ingredientInfo div {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    transition: transform 1s;
+}
+
+.ingredientInfo div:hover .ingredientImg {
+    transform: scale(0.7);
+}
+
+.ingredientInfo h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.ingredientInfo p {
+    line-height: 1.8;
+    text-align: center;
+    color: rgb(96, 95, 95);
+}
+
+.waterImg {
+    width: 100%;
+    height: 200px;
+}
+
+.FranchiseQueries {
+    overflow: hidden;
+    width: 80%;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.FranchiseImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.FranchiseQueries:hover .FranchiseImg {
+    transform: scale(1.05);
+}
+
+.ImgGallery {
+    display: flex;
+    gap: 15px;
+    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 19%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+/* Faint overlay effect */
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Show overlay and icon on hover */
+.img-wrapper:hover::before {
+    opacity: 1;
+}
+
+.img-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.img-wrapper:hover i {
+    opacity: 1;
+}
+
+
+.InfoDiv {
+    width: 65%;
+    margin: 20px auto;
+    line-height: 1.8;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: -1px 5px 5px 2px gray;
+}
+
+.InfoDiv h1 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.InfoDiv p {
+    color: black;
+}
+
+.Btn {
+    display: block;
+    margin: 10px auto;
+}
+
+.greenDiv {
+    background-color: green;
+    width: 100%;
+    height: 300px;
+}
+
+.greenDiv h1 {
+    padding-top: 50px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logoDiv {
+    text-align: center;
+}
+
+.FooterSec {
+    background-color: rgb(65, 64, 64);
+}
+
+.Footer {
+    display: flex;
+    gap: 50px;
+    padding: 80px 50px 0px 50px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+footer h3 {
+    color: rgb(160, 158, 158);
+    margin: 20px 0;
+}
+
+footer a,
+p {
+    color: rgb(250, 248, 248);
+    font-size: larger;
+    line-height: 1.5;
+}
+
+.socialMedia {
+    padding: 30px;
+}
+
+.iconsList {
+    display: flex;
+    width: 35%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.icon {
+    background-color: rgb(48, 47, 47);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 1s;
+    font-size: large;
+}
+
+.icon:hover {
+    transform: translateY(-13px);
+    background-color: white;
+    color: green;
+}
+
+.goTop {
+    font-size: xx-large;
+    border-radius: 50%;
+    color: white;
+    background-color: #001018;
+    padding: 10px;
+    bottom: 10px;
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+}
+
+
+/* blog css */
+.blog h1 {
+    margin-bottom: 15px;
+}
+
+.blog p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.GrayText {
+    color: gray;
+    margin-top: 20px;
+}
+
+.BlogDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.BlogInfo {
+    width: 26%;
+    height: 520px;
+    margin: 20px 0;
+}
+
+.BlogInfo:hover {
+    background-color: whitesmoke;
+}
+
+.BlogInfo div {
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.BlogInfo:hover .blogImg {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+.blogImg {
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    /* this is static styling, not an animation */
+}
+
+.BlogInfo .blogHeading {
+    display: flex;
+    justify-content: center;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.VMBtn {
+    padding: 2% 36%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+/* storeLocator */
+.textAndMapDiv {
+    display: flex;
+    margin: 50px;
+}
+
+.textDiv {
+    flex: 1;
+}
+
+.textDiv div {
+    display: flex;
+    margin: 3% 20%;
+}
+
+.textDiv button {
+    margin-left: 19%;
+}
+
+
+.dropdown {
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    width: 30%;
+    border: none;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.mapDiv {
+    flex: 1;
+}
+
+/* franchaiseQueries */
+.List {
+    list-style-type: disc;
+    /* margin-left: 30px; */
+    width: 75%;
+    margin: 10px auto;
+}
+
+.List {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.GeneralInfo {
+    width: 80%;
+    background-color: aliceblue;
+    margin: 50px auto;
+}
+
+.GeneralInfo h1 {
+    padding: 50px;
+    text-align: center;
+}
+
+form {
+    height: auto;
+    display: grid;
+    padding-bottom: 50px;
+}
+
+form input,
+select {
+    width: 80%;
+    padding: 15px 20px;
+    margin: 0px auto 10px auto;
+    border-radius: 7px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(205, 204, 204) !important;
+}
+
+form ::placeholder {
+    color: black;
+}
+
+form div {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: auto;
+    margin: 5px auto 0px auto;
+}
+
+form div input,
+select {
+    flex: 1;
+    height: 50px;
+    font-size: 15px;
+}
+
+form select.dropdown {
+    margin-left: 0;
+}
+
+select {
+    appearance: none;
+    /* or -webkit-appearance: none; */
+    /* text-align: center; */
+}
+
+.form2 div {
+    display: flex;
+    /* margin-bottom: 10px; */
+    margin-top: 20px;
+}
+
+.form2 select, .form3 select {
+    background-color: black !important;
+    color: white;
+}
+
+.form1 input, .form2 input,
+.form3 input {
+    padding: 15px 20px;
+}
+
+div.form-row {
+    display: flex;
+    gap: 20px;
+    margin: 0px auto;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.form-group input {
+    margin: 0;
+    padding: 15px;
+}
+.checkboxDiv{
+    margin: 20px 150px;
+}
+.checkboxDiv input{
+    margin-bottom: 20px;
+}
+.FranchaiseBTN{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and  (max-width: 576px){
+    .rightDiv{
+        margin:20px;
+    }
+    nav{
+        margin-top: 50px;
+    }
+    .navList {
+        flex-direction: column;
+    }
+    .OriginalProduct{
+        flex-direction: column;
+    }
+    .ProductDiv{
+        width: 100%;
+    }
+    .card{
+        width: 40%;
+    }
+    .Footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Mainheader{
+        flex-direction: column;
+    }
+    iframe{
+        width: 50%;
+    }
+}
